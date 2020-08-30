@@ -6,6 +6,8 @@ body {
     background: url(../Imagenes/frutas.jpg);
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100%;
+    flex-wrap: wrap;
 }
 * {
     box-sizing: border-box;
@@ -111,8 +113,8 @@ nav ul li a:hover{
 }
 .formulario{
     background: #fff;
-    margin-top: 150px;
-    padding: 3px;
+    margin-top: 100px;
+    padding: 5px;
 }
 h1{
     text-align: center;
@@ -160,12 +162,33 @@ p{
 .link:hover{
      color: cadetblue;
 }
+.footer{
+  align-self: flex-end;
+  background: #0b0650;
+  line-height: 3;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  bottom: 0%;
+  color: #fff;
+}
+
+#footer-column-container {
+  widows: 50px;
+  clear:both;
+  font-family: 'Comic Sans MS';
+  }
+  .footer-column {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  }
+
 @media(min-width:768px)
 {
     .formulario{
         margin: auto;
         width: 500px;
-        margin-top: 50px;
+        margin-top: 10px;
         border-radius: 2%;
     }
 }
