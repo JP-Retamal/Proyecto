@@ -8,10 +8,8 @@
         <title>Login Usuarios</title> 
         <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-        <link rel="stylesheet" href="estilos.css">
         <link rel="stylesheet" href="../CSS/estilos.css">
         <script src="../JS/validar.js"></script>
-        
     </head>  
 
     <body>
@@ -32,28 +30,30 @@
                 <li><a class="active" href="#">Ingreso</a></li>
             </ul>
         </nav>
-
-        <form class="formulario" action="validar.php" method="POST" onsubmit="return validar();">
-        
+        <form class="formulario" action="" id="form" method="POST">       
             <h1>Login</h1>
             <div class="contenedor">
-
-                <div class="input-contenedor">
-                    <i class="fas fa-envelope icon"></i>
-                    <input type="email" id="correo" placeholder="Correo Electronico" name="correo" required>             
-                </div>
-                
-                <div class="input-contenedor">
-                    <i class="fas fa-key icon"></i>
-                    <input type="password" id="pass" placeholder="Contraseña" name="pass"required>             
-                </div>
-
+                <div class="form">
+                    <div class="input-contenedor">
+                        <div class="grupo">
+                            <i class="fas fa-envelope icon"></i>
+                            <input type="email" id="correo" placeholder="Correo Electronico" required>                           
+                        </div>            
+                    </div>               
+                    <div class="input-contenedor">
+                        <div class="grupo">
+                            <i class="fas fa-key icon"></i>
+                            <input type="password" id="pass" placeholder="Contraseña" required> 
+                        </div>            
+                    </div>
+                </div>    
                 <input type="submit" value="ingresar" class="button">
+                <p class="warnings" id="warnings"></p>
                 <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                 <p>¿No tienes una cuenta? <a class="link" href="../Paginas/Registrar.html"> Registrate </a></p>
 
             </div>
-        </form>
+        </form>     
         <br>
         <div class="footer">
            

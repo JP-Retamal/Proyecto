@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
+/* ----- -----  Estilos para el cuerpo ----- ----- */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: url(../Imagenes/frutas.jpg);
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100%;
-    flex-wrap: wrap;
 }
+
+/* ----- -----  Barra lateral derecho cuando los formualrios son largos  ----- ----- */
+.formulario::-webkit-scrollbar {
+	width: 10px;
+}
+
+.formulario::-webkit-scrollbar-thumb {
+  background: #414141;
+  border-radius: 5px;
+}
+/* ----- -----  Estilos para borde de boton ----- ----- */
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* ----- -----  Estilos para barra de menu ----- ----- */
 nav{
     display: flex;
-    height: 80px;
+    height: 60px;
     width: 100%;
     background: #0b0650;
     align-items: center;
@@ -24,6 +33,7 @@ nav{
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
+/* ----- -----  Estilos para logo derecho navbar ----- ----- */
 nav .logo{
     color: #fff;
     font-size: 35px;
@@ -58,6 +68,7 @@ nav ul li a:hover{
     cursor: pointer;
     display: none;
 }
+/* ----- -----  Estilos para formulario ----- ----- */
   input[type="checkbox"]{
     display: none;
 }
@@ -111,11 +122,13 @@ nav ul li a:hover{
     width: 100%;
     padding: 15px;
 }
+/* ----- -----  Estilos para formularios ----- ----- */
 .formulario{
     background: #fff;
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 5px;
 }
+
 h1{
     text-align: center;
     color: #1a2537;
@@ -162,13 +175,24 @@ p{
 .link:hover{
      color: cadetblue;
 }
+
+.warning{
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  color: #B06AB3;
+  padding-top: 20px;
+}
+
+/* pie de pagina
+--------------------------------------------------------------------------------------------------------------- */
 .footer{
   align-self: flex-end;
   background: #0b0650;
   line-height: 3;
   width: 100%;
   position: fixed;
-  height: 60px;
+  height: 50px;
   bottom: 0%;
   color: #fff;
 }
@@ -189,7 +213,7 @@ p{
         margin: auto;
         width: 500px;
         margin-top: 10px;
-        border-radius: 2%;
+        border-radius: 5%;
     }
 }
 
