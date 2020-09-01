@@ -2,7 +2,6 @@
 <html lang="es">
 
     <head>
-
         <meta charset="UTF-8">
         <title>Index</title> 
         <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
@@ -21,21 +20,26 @@
             </label>
             <ul>
                 <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="../Capa_Interfaz/QuienesSomos.html">Quiénes Somos</a></li>
-                <li><a href="../Capa_Interfaz/Servicios.html">Servicios</a></li>
-                <li><a href="../Capa_Interfaz/Galeria.html">Galería</a></li>
+                <li><a href="#quienessomos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="../Capa_Interfaz/Paginas/Login.html">Ingreso</a></li>
             </ul>
         </nav>
-        <header class="parallax-completo">
+        <header class="parallax-titulo">
             
         </header> 
+        <br>
+        <a name="quienessomos"></a>
+        <br>
         <section class="center espacio">
             <h1>Quiénes Somos</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quisquam aperiam adipisci laudantium accusantium similique sint earum, iusto itaque quasi ad assumenda deleniti ratione vitae aliquid hic repellendus impedit obcaecati laborum quis tempore nesciunt aspernatur fugit! Magnam eos debitis ab similique atque obcaecati voluptas porro officiis cumque odio officia aperiam quibusdam sed, quas vero earum? Esse placeat soluta explicabo consequuntur illo recusandae amet voluptatibus pariatur exercitationem et velit voluptates qui, maiores corporis natus ipsam porro accusantium, delectus sapiente cumque aperiam nesciunt deserunt sunt! Soluta vel voluptates et reprehenderit voluptate! Nihil earum placeat libero, non illo laudantium enim cum amet. Itaque, est. Sequi temporibus atque odit perspiciatis numquam, a distinctio architecto, consequatur neque, quae dolor rerum. Magni, quam. Soluta rem ex aspernatur eveniet, voluptates possimus perferendis ad inventore rerum mollitia praesentium quod nostrum similique ullam beatae eos sunt nesciunt ab, accusamus a explicabo corporis iure quae? In quibusdam commodi temporibus.</p>
         </section>
+        <a name="servicios"></a>
         <section class="parallax-chico">
-            <h2 class="tituloimagen">Nuestros Servicios</h2>
+            <br>
+            <h2 class="tituloimagen" name="Servicios">Nuestros Servicios</h2>
         </section>
         <section class="texto">
             <br>
@@ -50,30 +54,58 @@
          </section>
          <section class="texto">
              <br>
-             <h1 class="interior">Galería</h1>
+             <br>
+            <a name="galeria"></a>
+             <h1 class="interior" name="Galeria">Galería</h1>
          </section>
          <section class="parallax-completo">
-            
-         </section>
-        
-        <div class="footer">
-           
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/cherry.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 1</h3>
+                </div>  
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/duraznos.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 2</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/guinda.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 3</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/manzana-delicious.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 4</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/naranjas.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 5</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Capa_Interfaz/Imagenes/Galeria/pera.jpg" alt="" class="gallery__img">
+                    <h3 class="gallery__title">Imagen 6</h3>
+                </div>
+            </div>  
+         </section>       
+        <div class="footer">         
             <div id='footer-column-container'>
-
+                <div id='footer1' style='width: 32%; float: left; margin:1px 1px 1px 1px; text-align: left;'>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
                 <div id='footer2' style='width: 32%; float: left; margin:1px 1px 1px 1px; text-align: left;'>
-                <b:section class='footer-column' id='col1' preferred='yes' style='float:left;'>
-                    <i class="fa fa-phone">+00 (123) 456 7890</i>
-                </b:section>
+                    <b:section class='footer-column' id='col1' preferred='yes' style='float:left;'>
+                        <i class="fa fa-phone">+00 (123) 456 7890</i>
+                    </b:section>
                 </div>
                 
-                <div id='footer4' style='width: 32%; float: right; margin:1px 1px 1px 1px; text-align: left;'>
-                <b:section class='footer-column' id='col3' preferred='yes' style='float:right;'>
-                    <i class="fa fa-envelope-o">MG.Contactos@maipoGrande.com</i>
-                </b:section>
-                </div></div>         
-        </div>
-    
+                <div id='footer3' style='width: 32%; float: right; margin:1px 1px 1px 1px; text-align: left;'>
+                    <b:section class='footer-column' id='col3' preferred='yes' style='float:right;'>
+                        <i class="fa fa-envelope-o">MG.Contactos@maipoGrande.com</i>
+                    </b:section>
+                </div>
+            </div>         
+        </div>   
     </body>
-    
-    
 </html>
